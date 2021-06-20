@@ -31,6 +31,7 @@ public class Carrinho {
 	
 	public void removeItem(Produto item) throws ProdutoNaoEncontradoException {
 		if (!items.remove(item)) {
+			
 			throw new ProdutoNaoEncontradoException();
 		}
 	}
